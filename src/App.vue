@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<div>
+		<h1>Hello from App.vue</h1>
+		<Child greet='Hello with props'/>
+		<!--
+			<p>parent_num: {{ parent_num }}</p>
+			<Child @my-click='parent_num = $event'/>
+		-->
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	import Child from './components/Child.vue'
+	export default {
+		// data: function(){
+		//   return{
+		//	   parent_num: 100
+		//	 }
+		// },
+		components: {
+			Child
+		}
+	}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
