@@ -42,7 +42,7 @@
 
 <style scoped>
 	.red-b{
-		border: 1px solid red;
+		border: 1.5px solid red;
 	}
 	.flex-container {
 		display: flex;

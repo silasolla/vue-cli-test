@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<div class="blue-b mb-4">
-			<p>id: {{ id }}</p>
-			<p>title: {{ title }}</p>
-			<p>image: {{ image }}</p>
-			<p>description: {{ description }}</p>
+		<div class="blue-b mp-4">
+			id: <div class="emph">{{ id }}</div><br>
+			title: <div class="emph">{{ title }}</div><br>
+			image: <div class="emph">{{ image }}</div><br>
+			description: <div class="emph">{{ description }}</div>
 		</div>
 	</div>
 </template>
@@ -22,10 +22,15 @@
 
 <style scoped>
 	.blue-b{
-		border: 1px solid blue;
+		border: 1.5px solid blue;
 	}
-	.mb-4{
+	.mp-4{
 		margin: 4px;
 		padding: 4px;
+	}
+	.emph{
+		font-weight: bold;
+		color: fuchsia;
+		display: inline;
 	}
 </style>
